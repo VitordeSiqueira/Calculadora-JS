@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <h1>Calculadora JS</h1>
+            <p class="resultado" ></p>
+            <div class="calculadora">
+                <table>
+                    <tr>
+                        <td colspan="2"><button class="btn" onclick="limparTodos()">C</button></td>
+                        <td colspan="2"><button class="btn" onclick="limpar()"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="inserir('7')">7</button></td>
+                        <td><button class="btn" onclick="inserir('8')">8</button></td>
+                        <td><button class="btn" onclick="inserir('9')">9</button></td>
+                        <td><button class="btn special" onclick="inserir('/')">/</button></td>
+                    </tr> 
+                    <tr> 
+                        <td><button class="btn" onclick="inserir('4')">4</button></td>
+                        <td><button class="btn" onclick="inserir('5')">5</button></td>
+                        <td><button class="btn" onclick="inserir('6')">6</button></td>
+                        <td><button class="btn special" onclick="inserir('*')">X</button></td>
+                    </tr>
+    
+                    <tr>
+                        <td><button class="btn" onclick="inserir('1')">1</button></td>
+                        <td><button class="btn" onclick="inserir('2')">2</button></td>
+                        <td><button class="btn" onclick="inserir('3')">3</button></td>
+                        <td><button class="btn special" onclick="inserir('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn special" onclick="inserir('0')">0</button></td>
+                        <td><button class="btn special ponto" onclick="inserir('.')">·</button></td>
+                        <td><button class="btn special" onclick="resultado()">=</button></td>
+                        <td><button class="btn special" onclick="inserir('+')">+</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
