@@ -35,6 +35,8 @@ function limparTodos() {
     p.innerHTML = ''
 };
 
+// >> comandos do teclado <<
+
 document.addEventListener('keydown', function key(e) {
 
     if (e.code === 'Enter' || e.code == 'NumpadEnter') return resultado()
